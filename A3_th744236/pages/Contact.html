@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Thomas Marchildon</title>
+        <link rel="icon" type="image/jpg" href="../Images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="../style/Contact_style.css">
+        <link rel="stylesheet" type="text/css" href="../style/menu.css">
+        <script src="../Scripts/main.js"></script>
+        <script src="../Scripts/contact.js"></script>
+    </head>
+    <body>
+        <div class="menu-container">
+            <a href="index.html"><img class="menu" src="../Images/home.png" alt="home"></a>
+            <a href="Contact.html"><img class = "menu"src="../Images/phone-call.png"alt="Contact"></a>
+            <a href="myWork.html"><img class="menu" src="../Images/suitcase.png" alt="My work"></a>
+            <button class="menu-button" onclick="forestGreenBackground()">
+                <img src="../Images/pine-tree.png" alt="pine tree">
+                <span>Forest Green</span>
+            </button>
+            <button class="menu-button" onclick="antiqueWhiteBackground()">
+                <img src="../Images/vase.png" alt="vase">
+                <span>Antique White</span>
+            </button>
+            <button class="menu-button" onclick="blueBackground()">
+                <img src="../Images/drop.png" alt="water drop">
+                <span>Marine Blue</span>
+            </button>
+        </div>
+        <div class="div1">
+            <div class="header">Contact Info</div>
+            <div class="contact-info">
+                <p>
+                    <ol> 
+                        <li>
+                            Phone numbers:
+                            <ul>
+                                <li>613-614-8596</li>
+                                <li>873-678-9876</li>
+                            </ul>
+                        </li>
+                        <li>
+                            email:
+                            <ul>
+                                <li>imagniary@info.ca</li>
+                            </ul>
+                        </li>
+                        <li>
+                            location:
+                            <ul>
+                                <li>K23 H6H</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="image">
+                <img width="400px" height="500px"src="../Images/eating.jpg"
+                alt="picture of me eating">
+            </div>
+            <div id="formBlock">
+                <span>Project Inquiries</span>
+                <form id="pInquiries" target="blank" onsubmit="return checkForm()" method="post">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" required>
+                    <label for="email">Email Adress</label>
+                    <input type="text" name="email" id="email" required>
+                    <label for="pNumb">Phone Number</label>
+                    <input type="tel" name="pNumb" id="pNumb" required>
+                    <label for="inquiries">Project Idea</label>
+                    <textarea name="inquiries" id="inquiries" rows="4" ></textarea required>
+                    <button id="test" type="button">Form Validation</button>
+                    <input type="submit" value="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="footer1"> website created by Thomas Marchildon</div>
+            <div id="footer2"> last updtated 2024-03-09</div>
+        </div>
+    </body>
+</html>

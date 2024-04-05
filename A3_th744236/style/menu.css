@@ -1,0 +1,97 @@
+:root
+{
+    --Primary-color:antiquewhite ;
+    --Secondary-color: aliceblue;
+}
+body
+{
+    margin:0;
+    background-color: var(--Primary-color);
+}
+.menu-container
+{
+    background-color: var(--Secondary-color);
+    display:flex;
+    justify-content: center;
+    height: 70px;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:999;
+}
+.menu
+{
+    margin:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.menu-button
+{
+    background: transparent;
+    border: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 40px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    margin-top:12px;
+}
+.menu-button> img 
+{
+    width: 30px;;
+    height: auto;
+}
+.menu-button> span 
+{
+    font-size: 7px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 600px)
+{
+
+    .menu-container
+    {
+        flex-wrap: wrap;  
+        justify-content: flex-start; 
+        height:auto;
+    }
+}
+.menu:hover,.menu-button:hover
+{
+    transform: scale(1.2);
+}
+
+.footer 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: var(--Secondary-color);
+    height: 100%;
+    border-top: 2px solid black;
+    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+}
+#footer1
+{
+    text-align: left;
+}
+#footer2
+{
+    text-align: right;
+}
+#footer1, #footer2
+{
+    padding-left: 30px;
+    padding-top:20px;
+    font-family:'Courier New', monospace;
+}

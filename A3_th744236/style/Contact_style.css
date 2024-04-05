@@ -1,0 +1,141 @@
+
+
+
+.div1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    min-height: 100vh;
+}
+.header
+{
+    padding-top:70px;
+    text-align: center;
+    font-size:100px;
+    font-family: 'Trebuchet MS';
+    padding-bottom: 50px;
+    width: 100%;
+}
+.contact-info 
+{
+    align-content: center;
+    width: 45%;
+    font-size: 30px;
+    font-family: 'Courier New';
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.image
+{
+    display: flex;
+    width: 45%;
+    justify-content : center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.image>img
+{
+    width: 50%;
+    height: auto;
+}
+#formBlock
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#formBlock>span
+{
+    width:100%;
+    text-align: center;
+    font-size:40px;
+    font-family: 'Trebuchet MS';
+    margin: 40px;
+    padding-top: 20px;
+}
+#pInquiries
+{
+    margin:20px;
+    padding-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    width:75%;
+    justify-content: center;
+    align-items:center;
+    border: 2px solid black;
+    border-radius:20px;
+    background-color: grey;
+}
+label
+{
+    font-size: 20px;
+    font-family:'Trebuchet MS';
+    margin:10px;
+}
+input[type=text],[type=tel], [type=number],textarea
+{
+    border-radius: 10px;
+    font-size: 12px;
+    font-family:monospace;
+    border: 2px solid black
+}
+input[type=text]
+{
+    width:35%;
+}
+input[type=tel]
+{
+    width:25%;
+}
+textarea
+{
+    width:90%;
+    height:auto;
+}
+input[type=number]
+{
+    width:30px;
+}
+@media only screen and (max-width: 900px)
+{
+
+    .contact-info, .image, #pInquiries
+    {
+        width:100%;
+    }
+}
+@media only screen and (min-width: 901px) 
+{
+
+    .contact-info,.image
+    {
+        width:45%;
+    }
+    #pInquiries
+    {
+        width:75%;
+    }
+}
+#test
+{
+    margin:20px;
+}
+#test, input[type=submit]
+{
+    transition: transform 0.3s ease;
+    background: white ;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#test:hover, input[type=submit]:hover
+{
+    transform: scale(1.1);
+}
+
+
